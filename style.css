@@ -1,0 +1,140 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#canvas{
+	border: none;
+	z-index: -1;	
+}
+
+body{
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+	position: fixed; 
+}
+
+button {
+	outline: none;
+	border: none;
+}
+.nav-btn {
+	vertical-align: center;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	position: absolute;
+	top: 30px;
+	left: 35px;
+	background-color: #A500FF;
+	border-radius: 50%;
+	z-index: 2;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	transform: rotateZ(0deg);
+}
+
+.nav-btn.opened {
+	transition: all 0.5s ease-out;
+	transform: rotateZ(-90deg);
+	color: #A500FF;
+	background-color: #F7F7F7;
+}
+
+.nav {
+	box-shadow: 2px 0px 10px #848484;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	z-index: 1;
+	left:0px;
+	top:-100%;
+	background: #F7F7F7;
+	clip-path: circle(100px at 0% 0%);
+	transition: all 1s ease-out;
+}
+.nav.opened {
+	border-radius: 0%;
+	transition: all 0.5s ease-out;
+	top: 0px;
+	clip-path: circle(1000px at 0% 0%);
+	
+}
+
+.navicon-holder {
+	margin-top: 100px;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+}
+
+.navicon {
+	background-color: white;
+	border: none;
+	margin: auto;
+}
+
+.colorpicker {
+	clip-path: circle(20px);
+	overflow: hidden;
+	border-radius: 50%;
+	width: 100%;
+	height: 60px;
+}
+
+.slider {
+	margin: auto;
+}
+
+.width {
+	text-align: center;
+	margin: 40px auto;
+	
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.color, .width, .clear, .eraser{
+	text-align: center;
+	margin: auto;
+	cursor: pointer;
+}
+
+.clear .eraser {
+	transform: scale(2);
+}
+
+p {
+	user-select: none;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.eraser.on {
+	color: #A500FF;
+	transition: color 0.2s ease-out;
+}
+
+

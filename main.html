@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drawing App</title>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!-- I finally have found a better icons than fontawesome!-->
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+</head>
+
+
+<body>
+	<div class = "nav-btn"><i class="fi-xnsuxl-three-bars-solid"></i></div>
+	<div class = "nav">
+		<div class = "navicon-holder">
+				<div class = "color">
+					<input class = "navicon colorpicker" type="color" value="#000000">
+					<p class="label">Color</p>
+				</div>
+			
+			<div class = "width">
+		    	<input type = "range" min="1" max="30" value="10" class="slider">
+		    	<p class="label">Width</p>
+			</div>
+
+			<div class = "eraser">
+				<i class="fi-onpuxl-pen"></i>
+				<p class = "label">Eraser</p>
+			</div>
+
+			<div class = "clear">
+				<i class="fi-xnsuxl-trash-bin"></i>
+				<p class = "label">Clear</p>
+			</div>
+		</div>
+	</div>
+
+	<canvas id = "canvas">Oops! Looks like something went wrong. Please make sure your browser does support canvas element. Try refreshing the page</canvas>
+	
+	
+</body>
+</html>	
